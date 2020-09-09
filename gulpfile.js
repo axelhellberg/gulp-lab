@@ -44,7 +44,7 @@ function imgTask() {
 function startServer() {
     browserSync.init({
         server: {
-            baseDir: "pub/"
+            baseDir: "pub/" // serve files from pub folder
         },
         injectChanges: false // fixes browsersync reload for css
     });
