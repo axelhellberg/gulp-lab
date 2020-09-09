@@ -1,0 +1,14 @@
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+.image > img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.image > span {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}

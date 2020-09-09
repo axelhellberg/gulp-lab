@@ -1,0 +1,53 @@
+.pixel-btn {
+    height: 54px;
+    width: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.pixel-btn.closed {
+    background-image: url('../img/open3.png');
+    animation: pixel-toggle .3s;
+    animation-direction: reverse;
+}
+
+.pixel-btn.opened {
+    background-image: url('../img/close5.png');
+    animation: pixel-toggle .3s;
+}
+
+@keyframes pixel-toggle {
+    0% {
+        background-image: url('../img/open4.png');
+    }
+
+    14% {
+        background-image: url('../img/open3.png');
+    }
+
+    28% {
+        background-image: url('../img/open2.png');
+    }
+
+    42% {
+        background-image: url('../img/open1.png');
+    }
+
+    56% {
+        background-image: url('../img/close1.png');
+    }
+    
+    70% {
+        background-image: url('../img/close2.png');
+    }
+
+    84% {
+        background-image: url('../img/close3.png');
+    }
+
+    100% {
+        background-image: url('../img/close4.png');
+    }
+}
